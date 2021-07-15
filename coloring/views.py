@@ -12,3 +12,10 @@ def new_interaction(request):
 
 def landing(request):
     return render(request, 'coloring/landing.html')
+
+def triangle(request):
+    return render(request, 'coloring/triangle.html')
+
+def flowers(request):
+    return render(request, 'coloring/flowers.html')
+
