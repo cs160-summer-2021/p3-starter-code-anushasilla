@@ -18,4 +18,7 @@ def triangle(request):
 
 def flowers(request):
     return render(request, 'coloring/flowers.html')
+    
+def blank(request):
+    return render(request, 'coloring/blank.html')
 
