@@ -5,6 +5,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   	<title>P3 Coloring</title>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,300,600,800,700&amp;subset=latin&amp;display=swap">
+  
 
 	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
@@ -36,6 +43,246 @@
 		    display: block;
 		}
 	</style>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+        }
+  
+      </style>
+      <style data-css-anim="">
+        [data-anim-type]:not([data-anim-done]) {
+          opacity: 0;
+        }
+  
+      </style>
+  
+  
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+  
+        body {
+          margin: 0;
+        }
+  
+        #imeqzr {
+          padding: 150px 0 150px 0;
+          border: 1px solid #EBEBEB;
+          color: #000000;
+        }
+  
+        #ipqrdg {
+          text-align: center;
+          font-family: Open Sans, sans-serif;
+        }
+  
+        #iwbl2v {
+          align-self: center;
+        }
+  
+        #ispy9l {
+          color: black;
+          height: 114px;
+          opacity: 0.5;
+          transition: opacity 0.2s ease;
+          width: 131px;
+        }
+  
+        #ifhg6g {
+          align-self: center;
+        }
+  
+        #i9kjwq {
+          align-self: center;
+        }
+  
+        #ispy9l:hover {
+          opacity: 1;
+        }
+  
+        #itv3o2 {
+          display: inline-block;
+          padding: 5px;
+          min-height: 50px;
+          min-width: 50px;
+        }
+  
+        #ilnj09 {
+          display: inline-block;
+          padding: 5px;
+          min-height: 50px;
+          min-width: 50px;
+        }
+  
+        #i3jiig {
+          display: inline-block;
+          padding: 5px;
+          min-height: 50px;
+          min-width: 50px;
+        }
+  
+        body {
+          font-family: Open Sans, sans-serif;
+        }
+  
+        .tooltip-component__body,
+        [data-tooltip]::after {
+          font-family: Helvetica, sans-serif;
+          background: rgba(55, 61, 73, 0.95);
+          border-radius: 3px;
+          bottom: 100%;
+          color: #fff;
+          content: attr(data-tooltip);
+          display: block;
+          font-size: 12px;
+          left: 50%;
+          line-height: normal;
+          max-width: 32rem;
+          opacity: 0;
+          overflow: hidden;
+          padding: 8px 16px;
+          pointer-events: none;
+          position: absolute;
+          text-overflow: ellipsis;
+          transform: translate(-50%, 0);
+          transition: opacity 0.25s, transform 0.25s;
+          white-space: nowrap;
+          box-sizing: border-box;
+          z-index: 10;
+        }
+  
+        [data-tooltip-visible=true]::after,
+        [data-tooltip]:focus::after,
+        [data-tooltip]:hover::after {
+          opacity: 1;
+          transform: translate(-50%, -0.5rem);
+        }
+  
+        [data-tooltip-pos=right]::after {
+          bottom: 50%;
+          left: 100%;
+          transform: translate(0, 50%);
+        }
+  
+        [data-tooltip-pos=right]:focus::after,
+        [data-tooltip-pos=right]:hover::after,
+        [data-tooltip-visible=true][data-tooltip-pos=right]::after {
+          transform: translate(0.5rem, 50%);
+        }
+  
+        [data-tooltip-pos=bottom]::after {
+          bottom: auto;
+          top: 100%;
+          transform: translate(-50%, 0);
+        }
+  
+        [data-tooltip-pos=bottom]:focus::after,
+        [data-tooltip-pos=bottom]:hover::after,
+        [data-tooltip-visible=true][data-tooltip-pos=bottom]::after {
+          transform: translate(-50%, 0.5rem);
+        }
+  
+        [data-tooltip-pos=left]::after {
+          bottom: 50%;
+          left: auto;
+          right: 100%;
+          transform: translate(0, 50%);
+        }
+  
+        [data-tooltip-pos=left]:focus::after,
+        [data-tooltip-pos=left]:hover::after,
+        [data-tooltip-visible=true][data-tooltip-pos=left]::after {
+          transform: translate(-0.5rem, 50%);
+        }
+  
+        [data-tooltip-length=small]::after {
+          white-space: normal;
+          width: 80px;
+        }
+  
+        [data-tooltip-length=medium]::after {
+          white-space: normal;
+          width: 150px;
+        }
+  
+        [data-tooltip-length=large]::after {
+          white-space: normal;
+          width: 300px;
+        }
+  
+        [data-tooltip-length=fit]::after {
+          white-space: normal;
+          width: 100%;
+        }
+
+        button[data-tooltip] {
+          overflow: visible;
+        }
+  
+        #idplxx {
+          color: black;
+          height: 79px;
+          opacity: 0.5;
+          transition: opacity 0.2s ease;
+          width: 150px;
+        }
+  
+        #idplxx:hover {
+          opacity: 1;
+        }
+  
+        #i2koeq {
+          color: black;
+          height: 111px;
+          opacity: 0.5;
+          transition: opacity 0.2s ease;
+          width: 126px;
+        }
+  
+        #i2koeq:hover {
+          opacity: 1;
+        }
+  
+        #ivuxce {
+          color: black;
+          height: 75px;
+          opacity: 0.5;
+          transition: opacity 0.2s ease;
+          width: 133px;
+        }
+  
+        #ivuxce:hover {
+          opacity: 1;
+        }
+  
+        #ih54fg {
+          color: black;
+          height: 120px;
+          opacity: 0.5;
+          transition: opacity 0.2s ease;
+          width: 137px;
+        }
+  
+        #ih54fg:hover {
+          opacity: 1;
+        }
+  
+        #i9cx9n {
+          color: black;
+          height: 116px;
+          opacity: 0.5;
+          transition: opacity 0.2s ease;
+          width: 133px;
+        }
+  
+        #i9cx9n:hover {
+          opacity: 1;
+        }
+  
+      </style>
 
 	<script type="text/javascript" canvas="canvas">
 		window.onload = function() {
@@ -65,6 +312,10 @@
 				    		// only color in with the most-recent color.
 				        hit.item.fillColor = cp.history[cp.history.length - 1];
 				    }
+				}
+				tool.onMouseDrag = function(event){
+					path.add(event.point); 
+					path.smooth();
 				}
 			}
 
@@ -118,8 +369,47 @@
 	</script>
 </head>
 <body>
-
 	<canvas id="myCanvas" width="750px" height="750px"></canvas>
 	<div id="color-palette"></div>
+    <section id="imeqzr" class="gpd-section" data-anim-done="1" style="animation-name: fadeIn;">
+        <div id="ipqrdg" class="gpd-container">
+          <div id="iw1g4u" class="gdp-row">
+            <div id="iwbl2v" class="cell"><a id="itv3o2" href="" target="_blank" class="gpd-link-box"><img src="https://www.mcicon.com/wp-content/uploads/2020/12/Education_Pen_1-copy-13.jpg" id="ispy9l"><img src="https://png.pngtree.com/png-vector/20190326/ourlarge/pngtree-vector-eraser-icon-png-image_865243.jpg" id="i9cx9n"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBtNu0wlZfcgl8wucmwhVhtdBbwsZGbAxa349WOkm3TSuZs9COWHxTFWxpz5q-pGIS09E&amp;usqp=CAU" id="ih54fg"><img src="https://img.flaticon.com/icons/png/512/25/25249.png?size=1200x630f&amp;pad=10,10,10,10&amp;ext=png&amp;bg=FFFFFFFF" id="ivuxce"><img src="https://www.pngkey.com/png/detail/395-3957074_free-save-button-icon-png-file-save-icon.png" id="i2koeq"><img src="https://img.flaticon.com/icons/png/512/44/44650.png?size=1200x630f&amp;pad=10,10,10,10&amp;ext=png&amp;bg=FFFFFFFF" id="idplxx"></a></div>
+            <div id="ifhg6g" class="cell"><a id="ilnj09" href="" target="_blank" class="gpd-link-box"></a></div>
+            <div id="i9kjwq" class="cell"><a id="i3jiig" href="h" target="_blank" class="gpd-link-box"></a></div>
+          </div>
+        </div>
+      </section>
 </body>
+<style>
+    a.page-brand-badge {
+      border-radius: 3px !important;
+      background-color: white !important;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 5px 7px !important;
+      font-family: Helvetica, sans-serif !important;
+      font-size: 12px !important;
+      text-decoration: none !important;
+      color: #555 !important;
+      transition: box-shadow 0.25s !important;
+    }
+
+    a.page-brand-badge:hover {
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+  </style>
+  <defs>
+    <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+      <stop stop-color="#EAB3D5" offset="0%"></stop>
+      <stop stop-color="#D06E9A" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g>
+      <circle fill="url(#linearGradient-2)" cx="251" cy="251" r="250"></circle>
+
+      <script async="" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" onload="postJQ()"></script>
+      <script async="" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </html>
+
