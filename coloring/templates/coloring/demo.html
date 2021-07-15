@@ -116,10 +116,29 @@
 			init(true);
 		}
 	</script>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
+			
+	<script type="text/paperscript" canvas="myCanvas">
+		//pencil feature
+		var path;
+
+		function onMouseDown(event) {
+			path = new Path();
+			path.strokeColor = '#00000';
+			path.strokeWidth = 2;
+			path.add(event.point);
+		}
+
+		function onMouseDrag(event) {
+			path.add(event.point);
+		}
+	</script>
 </head>
 <body>
 
 	<canvas id="myCanvas" width="750px" height="750px"></canvas>
 	<div id="color-palette"></div>
+	
 </body>
 </html>
