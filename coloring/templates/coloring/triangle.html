@@ -18,13 +18,15 @@
 
 	<style type="text/css">
 		#color-palette {
-			width: 300px;
-			background-color: #f1f1f1;
-			display: flex;
-			flex-wrap: wrap;
-			position: absolute;
-			top: 0;
-		}
+        width: 70px;  
+        background-color: #f1f1f1;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 0;
+        margin-left: 200px;
+        margin-top: 50px;
+    }
 
 		.swatch {
 			width: 24px;
@@ -388,6 +390,82 @@
 
 </head>
 <body>
+  <body>
+    <a href = "landing" style = "text-decoration-color: white;" class = "home">&nbsp;🏠&nbsp; </a>
+    <text class="add">≡
+        <span class="addtext">
+            <text>Clear Drawing</text>
+            <hr>
+            <text>Download</text>
+            <hr>
+            <text>Settings</text>
+        </text>
+    
+
+        <style>
+            .home {
+                font-size: 30px;
+            }
+            .add {
+                    color: black;
+                    background-color: white;
+                    font-size: 55px;
+                    text-decoration-line: none;
+                    
+                }
+            
+            .addtext {
+                visibility: hidden;
+                width: 150px;
+                background-color: rgba(0, 0, 0, 0.803);
+                color: #fff;
+                text-align: start;
+                padding: 5px 0;
+                font-size: 20px;
+            
+                /* Position the tooltip */
+                position: absolute;
+                z-index: 10;
+                display: inline-block;
+            }
+            
+            .add:hover .addtext {
+                visibility: visible;
+            }
+
+            #swap {
+                font-size: 45px; 
+                width: 55px;
+        
+                text-align: center;
+                text-decoration-color: white;
+                margin-left: 60%;
+                color: black;
+                background-color:white;
+                border-color: purple;
+                position: relative;
+                
+            }
+       </style>
+
+    <button onclick = "swapFunc()" id = "swap" >⬄</button>
+    <canvas id="myCanvas" width="750px" height="750px" ></canvas>
+    
+    <script>
+        function swapFunc() {
+            if(document.getElementById("color-palette").style.left == '1000px'){
+                document.getElementById("color-palette").style.left="5px";    
+            }else{
+                document.getElementById("color-palette").style.left="1000px";  
+            }
+        }
+
+    </script>
+    <div id="color-palette"></div>
+    
+    
+</script>
+
 	<canvas id="myCanvas" width="750px" height="750px"></canvas>
 	<div id="color-palette"></div>
     <section id="imeqzr" class="gpd-section" data-anim-done="1" style="animation-name: fadeIn;">

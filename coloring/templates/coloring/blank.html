@@ -1,0 +1,91 @@
+<head>
+    <!-- Load the Paper.js library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
+    <!-- Define inlined PaperScript associate it with myCanvas -->
+    <script type="text/paperscript" canvas="myCanvas">
+        //pencil feature
+    
+    
+
+        function onMouseDown(event) {
+            path = new Path();
+            path.strokeColor = '#00000';
+            path.strokeWidth = 2;
+            path.add(event.point);
+        }
+
+        function onMouseDrag(event) {
+            path.add(event.point);
+        }
+
+    </script>
+
+    <script></script>
+    </head>
+    <body>
+      
+            <a href = "landing" style = "text-decoration-color: white;" class = "home">&nbsp;🏠&nbsp; </a>
+            <text class="add">≡
+                <span class="addtext">
+                    <text>Clear Drawing</text>
+                    <hr>
+                    <text>Download</text>
+                    <hr>
+                    <text>Settings</text>
+                </text>
+            
+        
+                <style>
+                    .home {
+                        font-size: 30px;
+                    }
+                    .add {
+                            color: black;
+                            background-color: white;
+                            font-size: 55px;
+                            text-decoration-line: none;
+                            
+                        }
+                    
+                    .addtext {
+                        visibility: hidden;
+                        width: 150px;
+                        background-color: rgba(0, 0, 0, 0.803);
+                        color: #fff;
+                        text-align: start;
+                        padding: 5px 0;
+                        font-size: 20px;
+                    
+                        /* Position the tooltip */
+                        position: absolute;
+                        z-index: 10;
+                        display: inline-block;
+                    }
+                    
+                    .add:hover .addtext {
+                        visibility: visible;
+                    }
+        
+                    #swap {
+                        font-size: 45px; 
+                        width: 55px;
+                
+                        text-align: center;
+                        text-decoration-color: white;
+                        margin-left: 60%;
+                        color: black;
+                        background-color:white;
+                        border-color: purple;
+                        position: relative;
+                        
+                    }
+               </style>
+            <br><br>
+            <br>
+         
+   
+        <canvas id="myCanvas" width = "1100" height = "600" style = "border: 2px black solid"></canvas>
+        <button  id = "pencil">pencil</button>
+        <button id = "eraser">eraser</button>
+    </body>
+    </html>
